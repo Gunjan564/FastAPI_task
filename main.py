@@ -3,7 +3,7 @@ from pydantic import BaseModel, Field
 from typing import Optional
 
 class Product(BaseModel):
-    id:int = Field(...,description="id of the Product",examples="1")
+    id:int = Field(...,description="id of the Product",examples=[1])
     name:str = Field(...,min_length=1,description="Product's name is compulsory to mention")
     price:float=Field(...,gt=0.0,description="Price has to be greater than zero,i.e. Product cannot be free")
     quantity:int=Field(...,ge=0, description="quantity has to be a positive integer")
