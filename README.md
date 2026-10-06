@@ -32,8 +32,8 @@ A simple REST API built with FastAPI and Pydantic for managing products. This pr
 
 **Start the local server using Uvicorn:**
 
-    ```bash
     uvicorn main:app --reload
+
 **Testing the API**
-*FastAPI automatically generates interactive documentation. Once the server is running, open your web browser and navigate to:
+* FastAPI automatically generates interactive documentation. Once the server is running, open your web browser and navigate to:
 http://127.0.0.1:8000/docs
